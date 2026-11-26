@@ -9,6 +9,8 @@ import { mkdirSync, writeFileSync } from "node:fs";
 // cul-de-sacs, 2019 maps and recalculating were all saturated.
 // The gate allows 1-200 characters and the judge reads a single line,
 // so the entry is guarded here to be exactly one line with no newline.
+// Final line check: 72 characters, one sentence in two beats — the
+// destination moved, the dot moved with it, the dot was lunch.
 const LINE = "Your destination moved, so I followed the dot. The dot was a food truck.";
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
